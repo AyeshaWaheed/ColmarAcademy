@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size:8px;
+}
+
+   /*   Header Section   */
+
+header{
+    width: 100%;
+    height: 8rem;
+    display: flex;
+}
+header img{
+    height: 7rem;
+    margin:auto 0 auto 3rem;
+}
+.academy-name{
+    font-family: 'PT Sans Caption';
+    font-size:4rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+}
+.academy-name #color-black{
+    color:hsl(0, 1%, 33%);
+    font-weight: bold;
+}
+.academy-name #color-lightgray{
+    color:hsl(0, 1%, 64%);
+    font-weight:normal;
+}
+.nav-link{
+    display:flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right:3rem;;
+}
+ a{
+    text-decoration: none;
+    color:hsl(0, 1%, 33%);
+    font-size:3.2rem;
+    font-family: 'PT Sans Caption';
+    padding-left:2rem;
+}
+.nav-icon{
+    display:none;  
+ }
+ .nav-icon img{
+    height:7rem;
+    margin:auto 0 auto 3rem;
+ }
+
+
+@media only screen and (max-width:600px){
+    .academy-name{
+        display: none;
+    }
+    .academy-name #color-black{
+        display: none;
+    }
+    .academy-name #color-lightgray{
+        display: none;
+    }
+    .nav-link{
+        display:none;
+    }
+    a{
+        display: none;
+    }
+    .nav-icon{
+        margin-left:3.8rem;
+        display:flex;
+        flex-grow: 1;
+        justify-content: space-around;   
+    }    
+
+}
