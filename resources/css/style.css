@@ -52,7 +52,6 @@ header img{
  }
 .nav-icon img{
     height:7rem;  
-    margin:auto 0 auto 3rem;  
 }
 
 
@@ -70,5 +69,9 @@ header img{
         display:flex;
         flex-grow: 1;
         justify-content: space-around;
+        margin-right:1rem;
     }   
+    .nav-icon img{
+        margin:auto 0 auto 3rem;  
+    }
 }
