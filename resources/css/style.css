@@ -50,33 +50,25 @@ header img{
 .nav-icon{
     display:none;  
  }
- .nav-icon img{
-    height:7rem;
-    margin:auto 0 auto 3rem;
- }
+.nav-icon img{
+    height:7rem;  
+    margin:auto 0 auto 3rem;  
+}
 
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:480px){
+    header img{
+        margin-right:1.2rem;
+    }
     .academy-name{
-        display: none;
-    }
-    .academy-name #color-black{
-        display: none;
-    }
-    .academy-name #color-lightgray{
         display: none;
     }
     .nav-link{
         display:none;
     }
-    a{
-        display: none;
-    }
     .nav-icon{
-        margin-left:3.8rem;
         display:flex;
         flex-grow: 1;
-        justify-content: space-around;   
-    }    
-
+        justify-content: space-around;
+    }   
 }
