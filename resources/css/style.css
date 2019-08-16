@@ -30,7 +30,7 @@ header img{
     font-weight: bold;
 }
 .academy-name #color-lightgray{
-    color:hsl(0, 1%, 64%);
+    color:hsl(0, 0%, 77%);
     font-weight:normal;
 }
 .nav-link{
@@ -73,5 +73,60 @@ header img{
     }   
     .nav-icon img{
         margin:auto 0 auto 3rem;  
+    }
+}
+
+
+        /*   Banner Section   */
+
+.banner-container{
+    max-height: 100%;
+    max-width: 100%;
+    background-color:hsl(0, 0%, 77%); 
+    display:flex;
+}
+.banner-container img{
+    width:60%;
+    margin:4rem 3rem;
+}
+.container{
+    margin: auto 0 auto 3rem;
+}
+.content{
+    font-family: sans-serif;
+    font-size:2.7rem;
+    font-weight:bold;
+    color:hsl(0, 4%, 27%);
+}
+.content h1{
+    margin-bottom: 3rem;
+}
+.content p{
+    margin-bottom: 3rem;
+}
+.button{
+    width:100%;
+    background-color: hsl(0, 2%, 24%);
+    margin-left:0 ;
+}
+.button p{
+    color:white;
+    padding:1rem 0;
+    font-size:2rem;
+    font-family: sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+@media only screen and (max-width:480px){
+    .banner-container{
+        flex-wrap: wrap;
+    }
+    .banner-container img{
+        width:100%;
+        margin:0;
+    }
+    .container{
+        margin:4rem 0 4rem 2rem;
     }
 }
