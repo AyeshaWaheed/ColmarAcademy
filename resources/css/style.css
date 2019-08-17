@@ -152,13 +152,13 @@ header img{
     color:hsl(0, 2%, 24%);
     font-family: "Work Sans";
     font-size:5rem;
-    margin:0 0 4rem 3rem;
+    margin:0 0 3rem 3rem;
 }
 .information-main p{
     color: hsl(0, 2%, 24%);
     font-family: "Work Sans";
     font-size: 2.7rem;
-    margin:0 0 6rem 3rem;
+    margin:0 0 5rem 3rem;
 }
 .information-main #semi-bold{
     font-family: sans-serif;
@@ -181,14 +181,17 @@ header img{
     height: auto;
     margin:2rem;
 }
+#info-orientation-mobile{
+    display:none;
+}
 .information-orientation .content{
     margin: auto 0 auto 1rem;
     font-family: "Work Sans";
-    font-size:1.8rem;
+    font-size:1.6rem;
     
 }
 .information-orientation .content h1{
-    font-weight: 700;
+    font-weight: 500;
     margin:4rem 0 1rem 0;
 }
 .information-orientation .content p{
@@ -196,11 +199,136 @@ header img{
     font-size:2rem;
 }
 #color-blue{
-    margin-left: 0;
+    margin-top:-2rem;;
 }
 .information-orientation .content a{
-    color:blue;
+    color:rgb(68, 68, 216);
     text-decoration: none;
     font-size:2rem;
     padding-left:0;
+}
+.information .information-campus{
+    width:100%;
+    max-height:100%;
+    border:1px solid hsl(0, 7%, 89%);
+    margin-top:0.7%;
+    display:flex;
+}
+.information-campus img{
+    width:35%;
+    height: auto;
+    margin:2rem;
+}
+#info-campus-mobile{
+    display:none;
+}
+.information-campus .content{
+    margin: auto 0 auto 1rem;
+    font-family: "Work Sans";
+    font-size:1.6rem;
+    
+}
+.information-campus .content h1{
+    font-weight: 500;
+    margin:4rem 0 1rem 0;
+}
+.information-campus .content p{
+    font-weight:400;
+    font-size:2rem;
+}
+.information-campus .content a{
+    color:rgb(68, 68, 216);
+    text-decoration: none;
+    font-size:2rem;
+    padding-left:0;
+}
+.information .information-lecture{
+    width:100%;
+    max-height:100%;
+    background-color:hsl(0, 0%, 77%);
+    margin-top:0.1%;
+    display:flex;
+}
+.information-lecture img{
+    width:35%;
+    height: auto;
+    margin:2rem;
+}
+#info-lecture-mobile{
+    display:none;
+}
+.information-lecture .content{
+    margin: auto 0 auto 1rem;
+    font-family: "Work Sans";
+    font-size:1.6rem;
+    
+}
+.information-lecture .content h1{
+    font-weight: 500;
+    margin:4rem 0 1rem 0;
+}
+.information-lecture .content p{
+    font-weight:400;
+    font-size:2rem;
+}
+.information-lecture .content a{
+    color:rgb(68, 68, 216);
+    text-decoration: none;
+    font-size:2rem;
+    padding-left:0;
+}
+
+
+
+@media only screen and (max-width:600px){
+    .information-main{
+        display:none;
+    }
+    .information{
+        width:100%;
+    }
+    .information .information-orientation{
+        flex-wrap:wrap;
+    }
+    .information-orientation img{
+       display: none;
+    }
+    .information-orientation #info-orientation-mobile{
+        display:unset;
+        width:92.3%;
+        margin:2rem 2rem 0 2rem;
+    }
+    .information-orientation .content{
+        margin: 0 0 4rem 2rem;  
+    }
+
+    .information .information-campus{
+        flex-wrap:wrap;
+    }
+    .information-campus img{
+       display: none;
+    }
+    .information-campus #info-campus-mobile{
+        display:unset;
+        width:92.3%;
+        margin:2rem 2rem 0 2rem;
+    }
+    .information-campus .content{
+        margin: 0 0 4rem 2rem;  
+    }
+
+    .information .information-lecture{
+        flex-wrap:wrap;
+    }
+    .information-lecture img{
+       display: none;
+    }
+    .information-lecture #info-lecture-mobile{
+        display:unset;
+        width:92.3%;
+        margin:2rem 2rem 0 2rem;
+    }
+    .information-lecture .content{
+        margin: 0 0 4rem 2rem;  
+    }
 }
